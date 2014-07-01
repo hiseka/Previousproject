@@ -1,0 +1,251 @@
+@charset euc-kr;
+@font-face {
+	font-family: 'NanumBarunGothic';
+	font-style: normal;
+	src: url('../fonts/NanumBarunGothic.eot');
+	src: url('../fonts/NanumBarunGothic.eot') format('embedded-opentype'),
+	url('../fonts/NanumBarunGothic.woff') format('woff'),
+	url('../fonts/NanumBarunGothic.otf') format('opentype'),
+	url('../fonts/NanumBarunGothic.ttf') format('truetype'),
+	url('../fonts/NanumBarunGothic.svg') format('svg');
+}
+
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	width:100%;
+	height:auto;
+	font-family:"나눔바른고딕", "NanumBarunGothic", "맑은 고딕", "MalgunGothic", "돋움", Dotum, "굴림", Gulim, sans-serif;
+}
+input, button, select, textarea{
+	font-family:"나눔바른고딕", "NanumBarunGothic", "맑은 고딕", "MalgunGothic", "돋움", Dotum, "굴림", Gulim, sans-serif;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+fieldset{
+	border:1px solid black;
+}
+h1{
+	font-size:2em;
+}
+h2{
+	font-size:1.8em;
+	font-weight:bold;
+}
+h3{
+	font-size:1.6em;
+	font-weight:bold;
+}
+h4{
+	font-size:1.4em;
+}
+h5{
+	font-size:1.2em;
+}
+h6{
+	font-size:1em;
+}
+p{
+	font-size:1em;
+}
+strong{
+	font-size:1em;
+	display:block;
+	font-weight:bold;
+	color:#333;
+}
+img{
+	margin:0 auto;
+	display:block;
+}
+
+/* main layout */
+#main_page{
+	width:100%;
+	height:auto;
+	background:url('./images/bg.png') no-repeat;
+	background-size:100% 100%;
+}
+#data{
+	position:absolute;
+	width:33%;
+	height:5.1%;
+	top:16%;
+	left:37%;
+	z-index:2;
+}
+#data a{
+	display:block;
+	width:100%;
+	height:100%;
+	background:url('./images/data.png') no-repeat;
+	background-size:100% 100%;
+}
+#child{
+	position:absolute;
+	width:33%;
+	height:5.1%;
+	top:30%;
+	left:50%;
+}
+#child a{
+	display:block;
+	width:100%;
+	height:100%;
+	background:url('./images/child.png') no-repeat;
+	background-size:100% 100%;
+}
+#notice{
+	position:absolute;
+	width:33%;
+	height:5.1%;
+	top:55.7%;
+	left:14%;
+}
+#notice a{
+	display:block;
+	width:100%;
+	height:100%;
+	background:url('./images/notice.png') no-repeat;
+	background-size:100% 100%;
+}
+#parent{
+	position:absolute;
+	width:33%;
+	height:5.1%;
+	top:79%;
+	left:28%;
+}
+#parent a{
+	display:block;
+	width:100%;
+	height:100%;
+	background:url('./images/parent.png') no-repeat;
+	background-size:100% 100%;
+}
+#event{
+	position:absolute;
+	width:33%;
+	height:5.1%;
+	top:90.1%;
+	left:4%;
+}
+#event a{
+	display:block;
+	width:100%;
+	height:100%;
+	background:url('./images/event.png') no-repeat;
+	background-size:100% 100%;
+}
+#teacher{
+	position:absolute;
+	width:33%;
+	height:5.1%;
+	top:90.1%;
+	left:51%;
+}
+#teacher a{
+	display:block;
+	width:100%;
+	height:100%;
+	background:url('./images/teacher.png') no-repeat;
+	background-size:100% 100%;
+}
+
+/* content */
+.con img, .con h2, .con h3, .con p, .con strong{
+	margin-bottom:1%;
+}
+.con h2{
+	margin-left:1%;
+}
+.con h3, .con strong{
+	margin-left:1.25%;
+}
+.con p{
+	margin-left:1.5%;
+}
+.con ol{
+	margin-left:2.5%;
+}
+.con ol li{
+	margin-bottom:0.25%;
+}
+.con table{
+	margin:0 1% 11px 1%;
+}
+.con table~p{
+	border-bottom:1px solid #edfce3;
+	padding-bottom:11px;
+	color:#4f8c00;
+	font-weight:bold;
+}
+.con #spring h3, .con #spring p{
+	margin:0;
+}
+
+#the_portfolio_mo{
+	display:block;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:rgba(0,0,0,0.75);
+	z-index:7500;
+}
+#the_portfolio_mo h4{
+	width:100%;
+	text-align:center;
+	color:white;
+	font-weight:blod;
+	font-size:2em;
+}
+#the_portfolio_mo div{
+	width:100%;
+	text-align:center;
+	color:white;
+	font-size:1.5em;
+	margin-top:20px;
+}
