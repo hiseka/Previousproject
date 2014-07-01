@@ -1,0 +1,236 @@
+@charset utf-8;
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height:1;
+	width:100%;
+	background:url('../image/patton.png');
+	font-family:"나눔 고딕", "NanumGothicBold", "맑은 고딕", "MalgunGothic", "돋움", Dotum, "굴림", Gulim, sans-serif;
+}
+input, button, select, textarea{
+	font-family:"나눔 고딕", "NanumGothicBold", "맑은 고딕", "MalgunGothic", "돋움", Dotum, "굴림", Gulim, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+
+/* layout */
+#main{
+	width:100%;
+	height:auto;
+}
+header{
+	width:100%;
+	height:50px;
+	background:white;
+	line-height:50px;
+	text-align:center;
+	border-bottom:1px solid black;
+	box-sizing:border-box;
+}
+h1{
+	font-weight:bold;
+	font-size:1.5em;
+}
+#content{
+	width:100%;
+	overflow:hidden;
+}
+#slide_box{
+	width:400%;
+	height:100%;
+}
+.box{
+	width:25%;
+	height:100%;
+	float:left;
+	box-sizing:border-box;
+	padding:25px;
+}
+.top{
+	width:100%;
+	height:65%;
+	box-sizing:border-box;
+	border-top:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-right:2px solid black;
+}
+.top a{
+	display:block;
+	width:100%;
+	height:100%;
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-size:100% auto;
+}
+.box:nth-of-type(1) .top a{
+	background-image:url('./image/m1.png');
+}
+.box:nth-of-type(2) .top a{
+	background-image:url('./image/m2.png');
+}
+.box:nth-of-type(3) .top a{
+	background-image:url('./image/m3.png');
+}
+.box:nth-of-type(4) .top a{
+	background-image:url('./image/m4.png');
+}
+.bottom{
+	width:100%;
+	height:35%;
+	box-sizing:border-box;
+	border-top:2px solid black;
+	border-left:1px solid #ddd;
+	border-right:2px solid black;
+	border-bottom:2px solid black;
+	padding:10px;
+	background:white;
+}
+.bottom h2{
+	font-size:1.1em;
+    font-weight:bold;
+    margin-bottom:5px; 
+    text-shadow:1px 1px 3px black;
+}
+.bottom p{
+	text-align:justify;
+	margin-bottom:5px;
+	font-size:0.9em;
+}
+.bottom a{
+	font-weight:bold;
+	color:#aaa;
+}
+.box a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+footer{
+	width:100%;
+	height:50px;
+	background:white;
+	line-height:49px;
+	text-align:center;
+	border-top:1px solid black;
+	box-sizing:border-box;
+}
+#cover{
+	position:absolute;
+	z-index:2;
+	bottom:0;
+	right:0;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.75);
+}
+#coversimul{
+	margin:20% auto 0 auto;
+	width:200px;
+	height:300px;
+	border:2px solid white;
+	box-sizing:border-box;
+}
+#coverheader{
+	box-sizing:border-box;
+	width:100%;
+	height:7.5%;
+	border-bottom:2px solid white;
+}
+#covercontent{
+	width:100%;
+	height:85%;
+}
+#covercontrol{
+	width:100%;
+	height:20%;
+	padding-top:40%;
+}
+#covercontrol i{
+	font-size:3.5em;
+	color:white;
+}
+.fa-angle-right{
+	float:right;
+}
+#coverfooter{
+	box-sizing:border-box;
+	width:100%;
+	height:7.5%;
+	border-top:2px solid white;
+}
+#cover p{
+	color:white;
+	font-size:1.1em;
+	text-align:center;
+	margin-top:30px;
+}
+@media all and (orientation:landscape){
+.top{
+	width:50%;
+	height:100%;
+	border-top:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-right:0;
+	border-bottom:2px solid black;
+	float:left;
+}
+.bottom{
+	width:50%;
+	height:100%;
+	border-top:1px solid #ddd;
+	border-left:0;
+	border-right:2px solid black;
+	border-bottom:2px solid black;
+	float:left;
+}
+.bottom h2{
+	font-size:1em;
+
+}
+.bottom p{
+	font-size:0.75em;
+}
+.bottom a{
+	font-size:0.75em;
+}
+}
