@@ -20,7 +20,7 @@ function resized(){
 		$('#logo').css({padding:'20px 0px'});
 	}
 }
-$(window).resize(fuction(){
+$(window).resize(function(){
 	resized();
 });
 resized();
