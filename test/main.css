@@ -1,0 +1,81 @@
+/* layout */
+#motto{
+	height:312px;
+}
+#main{
+	margin-top:50px;
+	height:950px;
+}
+
+/* motto */
+.mottoCon{
+	font-family:'Lato', sans-serif;
+	font-size:160px;
+	text-align:center;
+	font-weight:900;
+	letter-spacing:-4px;
+	line-height:90%;
+	padding-bottom:20px;
+	text-shadow:3px 2px 2px rgba(150, 150, 150, 1);
+}
+.red{
+	font-family:'Playfair Display SC', serif;
+	font-size:140px;
+	letter-spacing:-8px;
+	color:#F0183D;
+}
+
+/* main */
+.mainCon{
+	border-top:1px solid #aaa;
+}
+#prolegomena{
+	height:400px;
+	width:100%;
+}
+.half{
+	height:240px;
+	width:50%;
+	float:left;
+	padding:80px 0;
+}
+.halfleft{
+	font-size:5em;
+	text-align:center;
+	font-family:'Playfair Display', serif;
+	font-weight:900;
+	font-style:italic;
+}
+.halfright{
+	font-size:1.3em;
+	font-family:'Lato', dotum, sans-serif;
+	font-weight:600;
+	line-height:1.4em;
+}
+.halfright > .red{
+	font-size:1em;
+}
+#project{
+	height:500px;
+	width:100%;
+}
+.featuredProject{
+	font-family:'Lato', sans-serif;
+	font-size:1.7em;
+	letter-spacing:2px;
+	padding-bottom:20px;
+	font-weight:800;
+	margin-bottom:35px;
+	border-bottom:2px solid black;
+}
+.projectleft{
+	float:left;
+	width:746px;
+	height:410px;
+	margin-right:35px;
+}
+.projectright{
+	float:left;
+	width:359px;
+	height:410px;
+}
