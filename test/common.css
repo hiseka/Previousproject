@@ -244,17 +244,30 @@ a{
 	height:100%;
 	float:left;
 }
-#logo{
+.logospaceM{
+	width:100%;
+	height:50%;
+}
+.logo{
 	width:80px;
 	padding:20px 0;
 }
-#mainnav{
+.logoM{
+	width:80px;
+	padding:22.5px 0px;
+	margin:0 auto;
+}
+.mainnav{
 	float:right;
 	width:1060px;
 	height:100%;
 }
 .mainnavCon{
 	float:right;
+}
+.mainnavConM{
+	width:100%;
+	height:100%;
 }
 .mainnavCon > li{
 	float:left;
@@ -263,11 +276,30 @@ a{
 	font-weight:600;
 	padding:50px 0 50px 35px;
 }
+.mainnavConM > li{
+	font-family: 'Open Sans', sans-serif;
+	font-size:0.95em;
+	font-weight:600;
+	height:25%;
+	width:100%;
+}
 .mainnavCon > li:last-child{
 	padding-right:50px;
 }
 .mainnavCon > li:first-child > a, .mainnavCon > li > a:hover{
 	border-bottom:3px solid black;
+}
+.mainnavConM > li > a{
+	display:block;
+	width:100%;
+	height:100%;
+	background:#000;
+	color:white;
+	text-align:center;
+	line-height:30px;
+} 
+.mainnavConM > li:first-child > a, .mainnavConM > li > a:hover{
+	background:#666;
 }
 
 /* footer */
