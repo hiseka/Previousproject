@@ -287,31 +287,14 @@ footer p{
 	margin-right:1%;
 }
 
-#the_portfolio{
-	position:absolute;
-	z-index:8000;
-	top:20%;
-	left:35%;
-	width:175px;
-	height:175px;
-	background:white;
-	border:2px solid black;
-}
-#circles{
-	width:175px;
-	height:175px;
-	border-radius:100px;
-	background:yellow;
-	line-height:175px;
-	text-align:center;
+.red_point{
+	color:blue;
 	font-weight:bold;
-	font-size:1.2em;
-	cursor:pointer;
 }
-#the_sub{
-	display:none;
-	padding-top:5px;
-	width:175px;
-	height:75px;
-	font-size:1.1em;
+.red_point a{
+	margin:0;
+	color:red;
+}
+.red_point a:hover{
+	color:silver;
 }

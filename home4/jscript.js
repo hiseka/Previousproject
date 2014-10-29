@@ -28,27 +28,4 @@ $(function(){
 			}
 		}
 	});
-	
-	var bb=1;
-	$('#circles').hover(function(){
-		if(bb==1){
-			$('#the_portfolio').animate({height:250},500);
-			$('#the_sub').slideDown(500);
-			bb=2;
-		}
-	});
-	$('#circles').click(function(){
-		$(this).animate({scale:0,opacity:0},{
-			step:function(now,fx){
-				$(this).css({
-					'transform':'scale('+now+')',
-					'-webkit-transform':'scale('+now+')','opacity':now
-				});
-			},duration:2000,complete:function(){
-				$('#the_portfolio').css('display','none');
-			}
-		});
-		$('#the_sub').slideUp(500);
-		$('#the_portfolio').animate({height:175},500);
-	});
 });
